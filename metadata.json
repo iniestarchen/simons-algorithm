@@ -1,0 +1,32 @@
+{
+  "id": "simons-algorithm",
+  "name": "Simon's Algorithm",
+  "category": "search",
+  "description": "Find the hidden period s='11' of a 2-to-1 function f(x) = f(x\u2295s) with exponential quantum speedup.",
+  "long_description": "Simon's algorithm finds the hidden period s of a 2-to-1 function f: {0,1}^n \u2192 {0,1}^n satisfying f(x) = f(x\u2295s) in O(n) quantum queries, versus exponential classically. Each run of the circuit yields a random string y orthogonal to s (y\u00b7s = 0 mod 2). After O(n) runs, Gaussian elimination over GF(2) recovers s. This problem inspired Shor's factoring algorithm.",
+  "difficulty": "intermediate",
+  "qubit_count": 4,
+  "clbit_count": 2,
+  "gate_count": 6,
+  "depth": 4,
+  "tags": [
+    "simons",
+    "hidden-subgroup",
+    "period-finding",
+    "exponential-speedup"
+  ],
+  "circuit_formats": [
+    "qasm2"
+  ],
+  "source_file": "circuit.qasm",
+  "expected_output": "y such that y\u00b7s = 0 mod 2 for s='11'; run multiple times and apply GF(2) elimination",
+  "references": [
+    {
+      "title": "Simon, D.R. (1997). On the Power of Quantum Computation. SIAM J. Comput. 26(5)",
+      "url": "https://doi.org/10.1137/S0097539796298637"
+    }
+  ],
+  "author": "OpenQC Community",
+  "license": "MIT",
+  "version": "1.0.0"
+}
