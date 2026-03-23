@@ -1,0 +1,28 @@
+{
+  "slug": "simons-algorithm",
+  "name": "Simon's Algorithm",
+  "version": "1.0.0",
+  "author": "iniestarchen",
+  "license": "Apache-2.0",
+  "description": "Find the hidden period s=11 of a 2-to-1 function with exponential quantum speedup.",
+  "industries": [
+    "education"
+  ],
+  "techniques": [
+    "gate"
+  ],
+  "difficulty": "intermediate",
+  "computation_model": "gate",
+  "algorithm_type": "circuit",
+  "qubit_count": 4,
+  "tags": [
+    "simon",
+    "period-finding",
+    "exponential-speedup"
+  ],
+  "access": "open",
+  "source": "official",
+  "metadata": {
+    "year_introduced": 1994
+  }
+}
